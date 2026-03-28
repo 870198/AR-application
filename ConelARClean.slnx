@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="ConelARClean/ConelARClean.csproj">
+    <Platform Solution="Release|*" Project="ARM64" />
+    <Deploy />
+  </Project>
+</Solution>

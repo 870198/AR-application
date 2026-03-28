@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ConelARClean.ARExperiencePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="#111827"
+    Title="AR Experience">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="18">
+            <Label
+                x:Name="TitleLabel"
+                Text="CONEL Esports AR Experience"
+                FontSize="28"
+                FontAttributes="Bold"
+                TextColor="White" />
+
+            <Label
+                x:Name="SubtitleLabel"
+                Text="Target detected successfully."
+                FontSize="18"
+                TextColor="#D1D5DB" />
+
+            <Frame
+                BackgroundColor="#1F2937"
+                BorderColor="#374151"
+                CornerRadius="14"
+                Padding="16">
+                <VerticalStackLayout Spacing="10">
+                    <Label
+                        Text="Welcome to the CONEL Esports Studio"
+                        FontSize="22"
+                        FontAttributes="Bold"
+                        TextColor="White" />
+
+                    <Label
+                        Text="Explore the 3D avatar, watch the esports promotional video, hear the audio message, and access studio links using the buttons below."
+                        FontSize="16"
+                        TextColor="#E5E7EB" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button
+                Text="View 3D Avatar in AR"
+                Clicked="OnViewModelClicked"
+                BackgroundColor="#2563EB"
+                TextColor="White"
+                CornerRadius="12"
+                HeightRequest="54" />
+
+            <Button
+                Text="Play Promotional Video"
+                Clicked="OnVideoClicked"
+                BackgroundColor="#7C3AED"
+                TextColor="White"
+                CornerRadius="12"
+                HeightRequest="54" />
+
+            <Button
+                Text="Play Audio Message"
+                Clicked="OnAudioClicked"
+                BackgroundColor="#059669"
+                TextColor="White"
+                CornerRadius="12"
+                HeightRequest="54" />
+
+            <Button
+                Text="Join Discord"
+                Clicked="OnDiscordClicked"
+                BackgroundColor="#F59E0B"
+                TextColor="White"
+                CornerRadius="12"
+                HeightRequest="54" />
+
+            <Button
+                Text="Back"
+                Clicked="OnBackClicked"
+                BackgroundColor="#374151"
+                TextColor="White"
+                CornerRadius="12"
+                HeightRequest="54" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
