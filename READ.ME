@@ -1,0 +1,37 @@
+# CornelClean - AR Event-Logging Application
+
+Production-ready AR application for CONEL Esports Studio promotional campaign.
+
+## Technical Highlights
+- **ARCore Integration:** Custom augmented image tracking with optimized keypoint detection
+- **Database Persistence:** SQLite with thread-safe connection management
+- **Android Lifecycle:** Proper async handling of camera permissions, activity transitions, session synchronization
+- **External API Integration:** TTS, Scene Viewer, Discord deep-links
+- **Testing Coverage:** 24 functional tests, 10 usability tests, comprehensive bug tracking
+
+## Architecture
+```
+MainPage (MAUI)
+├─ ARScanActivity (Native Android)
+│  ├─ ARManager (ARCore session config)
+│  ├─ ARSurfaceView (Hidden GL renderer)
+│  └─ DetectionLogger (SQLite)
+├─ ARExperiencePage (MAUI)
+│  ├─ Scene Viewer (External 3D model)
+│  ├─ VideoPage (Media playback)
+│  └─ TTS Integration
+└─ DetectionReader (SQLite query layer)
+```
+
+## Requirements
+- ARCore-compatible Android device
+- Internet connection (for 3D model hosting)
+- Target image (included in `/docs`)
+
+## Documentation
+See `/docs` for:
+- Comprehensive test tables
+- Architecture diagrams
+- User feedback analysis
+- Technical decision justifications
+- Performance optimization log
